@@ -18,6 +18,10 @@ Builder: cmake
 # This section specifies build dependencies that are resolved using pkgconfig.
 # This is the preferred way of specifying build dependencies for your package.
 PkgConfigBR:
+  - sailfishapp >= 1.0.2
+  - Qt5Core
+  - Qt5Qml
+  - Qt5Quick
 
 # Build dependencies without a pkgconfig setup can be listed here
 # PkgBR:
@@ -25,11 +29,21 @@ PkgConfigBR:
 
 # Runtime dependencies which are not automatically detected
 Requires:
+  - sailfishsilica-qt5 >= 0.10.9
 
 # All installed files
 Files:
   - '/usr/share/maliit/plugins/com/jolla/layouts/layouts_bepo.conf'
   - '/usr/share/maliit/plugins/com/jolla/layouts/fr_bepo.qml'
+  - '/usr/bin/sfos-bepo'
+  - '/usr/share/applications/sfos-bepo.desktop'
+  - '/usr/share/icons/hicolor/108x108/apps/sfos-bepo.png'
+  - '/usr/share/icons/hicolor/128x128/apps/sfos-bepo.png'
+  - '/usr/share/icons/hicolor/172x172/apps/sfos-bepo.png'
+  - '/usr/share/icons/hicolor/86x86/apps/sfos-bepo.png'
+  - ' /usr/share/sfos-bepo/qml/cover/CoverPage.qml'
+  - '/usr/share/sfos-bepo/qml/pages/FirstPage.qml'
+  - '/usr/share/sfos-bepo/qml/sfos-bepo.qml'
 
 # For more information about yaml and what's supported in Sailfish OS
 # build system, please see https://wiki.merproject.org/wiki/Spectacle

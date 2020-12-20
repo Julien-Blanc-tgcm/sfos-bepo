@@ -16,6 +16,12 @@ License:    LICENSE
 URL:        http://example.org/
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  sfos-bepo.yaml
+Requires:   sailfishsilica-qt5 >= 0.10.9
+BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
+BuildRequires:  pkgconfig(Qt5Core)
+BuildRequires:  pkgconfig(Qt5Qml)
+BuildRequires:  pkgconfig(Qt5Quick)
+BuildRequires:  desktop-file-utils
 BuildRequires:  cmake
 
 %description
@@ -47,9 +53,22 @@ rm -rf %{buildroot}
 # >> install post
 # << install post
 
+desktop-file-install --delete-original       \
+  --dir %{buildroot}%{_datadir}/applications             \
+   %{buildroot}%{_datadir}/applications/*.desktop
+
 %files
 %defattr(-,root,root,-)
 /usr/share/maliit/plugins/com/jolla/layouts/layouts_bepo.conf
 /usr/share/maliit/plugins/com/jolla/layouts/fr_bepo.qml
+/usr/bin/sfos-bepo
+/usr/share/applications/sfos-bepo.desktop
+/usr/share/icons/hicolor/108x108/apps/sfos-bepo.png
+/usr/share/icons/hicolor/128x128/apps/sfos-bepo.png
+/usr/share/icons/hicolor/172x172/apps/sfos-bepo.png
+/usr/share/icons/hicolor/86x86/apps/sfos-bepo.png
+ /usr/share/sfos-bepo/qml/cover/CoverPage.qml
+/usr/share/sfos-bepo/qml/pages/FirstPage.qml
+/usr/share/sfos-bepo/qml/sfos-bepo.qml
 # >> files
 # << files
