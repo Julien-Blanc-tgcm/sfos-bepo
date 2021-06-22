@@ -40,7 +40,11 @@ KeyboardLayout {
             accents: ""; accentsShifted: ""
             nativeAccents: ""; nativeAccentsShifted: ""
         }
-        CharacterKey { caption: "é"; captionShifted: "É"; symView: "2"; symView2: "£" }
+        CharacterKey {
+            caption: "é"; captionShifted: "É"; symView: "2"; symView2: "£"
+            accents: "èé"; accentsShifted: "ÈÉ"
+            nativeAccents: "è"; nativeAccentsShifted: "È"
+        }
         CharacterKey {
             caption: "p"; captionShifted: "P"; symView: "3"; symView2: "$"
             accents: ""; accentsShifted: ""
@@ -60,6 +64,7 @@ KeyboardLayout {
         }
         CharacterKey {
             caption: "j"; captionShifted: "J"; symView: "9"; symView2: "["
+            accents: "jĵ"; accentsShifted: "JĴ"
         }
         CharacterKey { caption: "z"; captionShifted: "Z"; symView: "0"; symView2: "]" }
     }
@@ -71,7 +76,7 @@ KeyboardLayout {
             nativeAccents: "àâ"; nativeAccentsShifted: "ÀÂ"
         }
         CharacterKey { caption: "u"; captionShifted: "U"; symView: "#"; symView2: "^" 
-            accents: "üûuùú"; accentsShifted: "ÜÛUÙÚ"
+            accents: "üûuùúŭ"; accentsShifted: "ÜÛUÙÚŬ"
             nativeAccents: "ûùü"; nativeAccentsShifted: "ÛÙÜ"
         }
         CharacterKey {
@@ -81,12 +86,12 @@ KeyboardLayout {
         }
         CharacterKey {
             caption: "e"; captionShifted: "E"; symView: "-"; symView2: "_" 
-            accents: "èeéêë"; accentsShifted: "ÈEÉÊË"
-            nativeAccents: "èéêë"; nativeAccentsShifted: "ÈÉÊË"
+            accents: "êeë"; accentsShifted: "ÊEË"
+            nativeAccents: "êë"; nativeAccentsShifted: "ÊË"
         }
         CharacterKey {
             caption: "c"; captionShifted: "C"; symView: "="; symView2: "§" 
-            accents: "cç"; accentsShifted: "CÇ"
+            accents: "cçĉ"; accentsShifted: "CÇĈ"
             nativeAccents: "cç";nativeAccentsShifted: "CÇ"
         }
         CharacterKey {
@@ -95,7 +100,7 @@ KeyboardLayout {
         }
         CharacterKey {
             caption: "s"; captionShifted: "S"; symView: ")"; symView2: "}"
-            accents: "sß"; accentsShifted: "Sß"
+            accents: "sßŝ"; accentsShifted: "SßŜ"
         }
         CharacterKey { caption: "r"; captionShifted: "R"; symView: "~"; symView2: "°" }
         CharacterKey {
@@ -112,14 +117,18 @@ KeyboardLayout {
 
         CharacterKey {
             caption: "y"; captionShifted: "Y"; symView: "@"; symView2: "«"
-            accents: "ýyÿ¥"; accentsShifted: "ÝYŸ¥"
+            accents: "ýyÿ¥ŷ"; accentsShifted: "ÝYŸ¥Ŷ"
         }
         CharacterKey { caption: "x"; captionShifted: "X"; symView: "&"; symView2: "»" }
         CharacterKey { caption: "k"; captionShifted: "K"; symView: "/"; symView2: "÷" }
         CharacterKey { caption: "q"; captionShifted: "Q"; symView: "\\"; symView2: "“" }
-        CharacterKey { caption: "g"; captionShifted: "G"; symView: "\""; symView2: "”" }
+        CharacterKey {
+            caption: "g"; captionShifted: "G"; symView: "\""; symView2: "”"
+            accents: "gĝ"; accentsShifted: "GĜ"
+        }
         CharacterKey {
             caption: "h"; captionShifted: "H"; symView: ";"; symView2: "„"
+            accents: "hĥ"; accentsShifted: "HĤ"
         }
         FittedCharacterKey { caption: "f"; captionShifted: "F"; symView: ":"; symView2: "‰" }
 

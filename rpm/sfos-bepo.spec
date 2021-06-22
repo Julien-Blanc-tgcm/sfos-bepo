@@ -9,7 +9,7 @@ Name:       sfos-bepo
 # << macros
 
 Summary:    Bépo layout for sailfish OS
-Version:    0.1
+Version:    0.2
 Release:    1
 Group:      System/Packages
 License:    LICENSE
